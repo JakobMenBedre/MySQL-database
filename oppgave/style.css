@@ -1,0 +1,66 @@
+a, a:visited {
+    color: #202020;
+}
+.title {
+    text-decoration: none;
+    color: #202020 !important;
+}
+#heading{
+    text-align: center;
+    color: black;
+    font-size: large;
+    padding: 10px;
+    background-color: indianred;
+    border-color:  #9a9a9a #eeeeee #eeeeee #9a9a9a; 
+    border-style: solid;
+    border-width: 2px;
+}
+#occations{
+    text-align: center;
+    color: rgb(255, 55, 37);
+    text-decoration: none;
+    font-size: 40px;
+    padding: 15px;
+}
+
+#klokke{
+    text-align: center;
+    font-size: 40px;
+}
+#logo{
+    height: 600px;
+    width: auto;
+}
+p {color: black;
+text-align: center;
+font-size: 25px;
+}
+h1 {color: black;
+text-align: center;
+font-size: 60px;
+}
+button {
+text-align: center;
+font-size: 20px;
+color: black;
+-moz-box-align: center;
+align-self: center;
+ruby-align: center;
+align-items: center;
+align-content: center;
+text-align-last: center;
+-webkit-box-align: center;
+}
+button {
+    font-family: "sofia sans";
+    background-color: #c8c8c8;
+    border-color: #eeeeee #9a9a9a #9a9a9a #eee;
+    border-style: solid;
+    border-width: 2px;
+}
+button:active {
+    border-color:  #9a9a9a #eeeeee #eeeeee #9a9a9a; 
+}
+body {
+    font-family: 'Sofia Sans', sans-serif;
+}

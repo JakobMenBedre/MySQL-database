@@ -1,0 +1,70 @@
+<html>
+<body>
+</body>
+</html>
+
+<?php
+$sql = "SELECT id, fname, lname FROM teachers";
+
+$result = $conn->query($sql);
+
+
+
+if ($result->num_rows > 0) {
+
+  // output data of each row
+
+  while($row = $result->fetch_assoc()) {
+
+    echo "" . $row["id"]. " - Navn: " . $row["fname"]. " " . $row["lname"]. "<br>";
+
+  }
+
+} else {
+
+  echo "0 results";
+
+}
+?>
+
+<hteml>
+<head>
+<body>
+</body>
+</head>
+</hteml>
+
+<?php
+$servername = "localhost";
+$username = "root";
+$password = "";
+$dbname = "teachers";
+
+// Create connection
+$conn = new mysqli($servername, $username, $password, $dbname);
+// Check connection
+if ($conn->connect_error) {
+  die("Connection failed: " . $conn->connect_error);
+}
+
+$sql = "SELECT tID, fName, lName FROM teachers";
+
+$result = $conn->query($sql);
+
+if ($result->num_rows > 0) {
+
+  // output data of each row
+
+  while($row = $result->fetch_assoc()) {
+
+    echo "" . $row["tID"]. " Navn: " . $row["fName"]. " " . $row["lName"]. " role" . $row["role"]. "<br>";
+
+  }
+
+} else {
+
+  echo "0 results";
+
+}
+
+

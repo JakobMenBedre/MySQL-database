@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<?php
+
+// Connect to the database
+$conn = mysqli_connect('hostname', 'username', 'password', 'teachers');
+
+// Check connection
+if (!$conn) {
+    die("Connection failed: " . mysqli_connect_error());
+}
+
+// Import the PHP file into the 'table_name' table
+$query = "LOAD DATA INFILE '/path/to/file.php' INTO TABLE table_name";
+$result = mysqli_query($conn, $query);
+
+if (!$result) {
+    die('Error importing data: ' . mysqli_error($conn));
+}
+
+echo 'Import successful!';
+
+mysqli_close($conn);
+
+?>
+
+<?php
+echo "HENGDEGSELV!";
+?>
+<p> <?php $current_date = date('Y-m-d');
+echo "The current date is: $current_date";
+?>
+
+</body>
+</html>
